@@ -1,0 +1,527 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Prompt", sans-serif;
+}
+
+.mainDiv {
+  background-image: url(./assets/images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 85vw;
+}
+
+.startGame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  margin: 60px 0px;
+}
+
+.navbarBtns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 650px;
+}
+
+.navbarBtns a:first-child {
+  font-weight: 600;
+}
+
+.navbarBtns a:last-child {
+  background-color: #00ae84;
+  padding: 10px 24px;
+  border-radius: 25px;
+  margin: 0;
+}
+
+.navbarBtns a:last-child:hover {
+  background-color: #594dd6;
+}
+
+.navbarBtns a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 24px;
+}
+
+.navbarBtns a:hover {
+  transition: ease-out 0.2s;
+  transform: scale(1.2);
+  color: #04ca7b;
+}
+
+.navbarBtns i {
+  color: white;
+}
+
+.navbarBtns .select {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  justify-content: space-between;
+  width: 70px;
+}
+
+.navbarBtns .select a {
+  margin: 0;
+  transform: none;
+  color: white;
+}
+
+.logo {
+  width: 240px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.globe {
+  width: 20px;
+  height: 20px;
+}
+
+.textBox h2 {
+  font-size: 62px;
+  font-weight: 600;
+  color: white;
+}
+
+.textBox h2:nth-child(2) {
+  font-family: "Signika", sans-serif;
+  font-weight: 700;
+  color: #00ae84;
+}
+
+.textBox p {
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.textBox .startBtn {
+  color: white;
+  background-color: #00ae84;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  width: fit-content;
+  padding: 12px 24px;
+  margin-top: 30px;
+}
+
+.textBox .startBtn:hover {
+  transition: ease-out 0.3s;
+  background-color: #594dd6;
+  transform: translateX(20px);
+}
+
+.textBox .startBtn span {
+  margin-right: 10px;
+}
+
+.textBox2 {
+  text-align: center;
+  margin-bottom: 55px;
+  margin-top: 105px;
+}
+
+.textBox2 span {
+  font-size: 44px;
+  font-weight: 600;
+  color: white;
+  margin-right: 10px;
+}
+
+.textBox2 .green {
+  color: #00ae84;
+}
+
+.textBox2 p {
+  color: white;
+  font-weight: 300;
+}
+
+.giftBoxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.giftBoxes .giftBox {
+  width: 230px;
+  height: 280px;
+  background-color: #00ae84;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.giftBoxes .giftBox:hover {
+  background-color: #594dd6;
+  transform: scale(1.05);
+  transition: ease-out 0.3s;
+}
+
+.giftBoxes .giftBox:hover .txt {
+  color: white;
+}
+
+.giftBoxes .giftBox .txt {
+  width: 170px;
+  text-align: center;
+}
+
+.imgPlaceholder {
+  position: relative;
+  /* overflow: hidden; */
+  width: fit-content;
+  height: 300px;
+}
+
+.imgPlaceholder img {
+  object-fit: scale-down;
+  height: 300px;
+}
+
+.infoOverlay {
+  background-color: black;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 242px;
+  width: 100%;
+  height: fit-content;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.infoOverlay .txtPlaceholder {
+  width: 90%;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoOverlay i {
+  padding: 12px;
+  margin-right: 10px;
+  border-radius: 100%;
+  color: #594dd6;
+  background-color: white;
+}
+
+.infoOverlay p {
+  font-size: 14px;
+}
+
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gameCard {
+  width: 380px;
+  border: 1px solid #696881;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+}
+
+.gameCard:hover {
+  transition: all 0.3s;
+  transform: scale(1.02);
+  cursor: pointer;
+  box-shadow: 0px 0px 10px lightgrey;
+}
+
+.gameCard .playNow:hover {
+  background-color: #594dd6;
+  transition: ease-out 0.2s;
+}
+
+.cardContainer {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.giftInfo {
+  color: #ccccd4;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 15px 5px 0px 5px;
+}
+
+.infoOverlay p {
+  color: white;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.tag {
+  z-index: 1;
+  position: absolute;
+  top: 25px;
+  left: -11px;
+  padding: 5px 20px;
+  background-color: #19163d;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.tag p {
+  color: white;
+}
+
+.about {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.aboutTxt {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: fit-content;
+  width: 155px;
+  height: 30px;
+}
+
+.aboutTxt i {
+  font-size: 10px;
+}
+
+.aboutTxt:nth-child(1) {
+  background-color: #7b5e9e;
+}
+
+.aboutTxt:nth-child(2) {
+  background-color: #3f3e92;
+  width: 190px;
+}
+
+.playNow {
+  width: 100%;
+  height: 50px;
+  background-color: #04ca7b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.playNow span {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.playNow img {
+  width: 40px;
+}
+
+.participated {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  align-items: center;
+  margin: 25px 0px 15px 0px;
+  align-self: flex-end;
+}
+
+.participated span {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.secondRow {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.secondRow .gameCard {
+  background-color: #231f56;
+}
+
+.secondRow .infoOverlay {
+  background-color: white;
+  border-radius: 0;
+  left: -10px;
+  width: 380px;
+}
+
+.secondRow .infoOverlay p {
+  color: black;
+}
+
+.secondRow .gameCard .cardContainer .about .aboutTxt {
+  background-color: transparent;
+}
+
+.secondRow .gameCard .cardContainer .about .aboutTxt i {
+  color: goldenrod;
+}
+
+.secondRow .gameCard .cardContainer .about .aboutTxt span {
+  color: #b1bfff;
+}
+
+.secondRow .tag {
+  background-color: white;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.secondRow .tag p {
+  color: #231f56;
+}
+
+.seeAll {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+}
+
+.seeAllBtn {
+  border: #00ae84 1px solid;
+  padding: 10px 20px;
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.seeAllBtn:hover {
+  background-color: #04ca7b;
+  transform: scale(1.1);
+  transition: ease-out 0.3s;
+  cursor: pointer;
+}
+
+.seeAllBtn span,
+i {
+  color: white;
+}
+
+.howItWorks {
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 90px 0px;
+  background-image: url(./assets/images/tint.png);
+}
+
+.howItWorks .textBox2 {
+  margin: 50px 0px 25px 0px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.boxes .box {
+  width: 305px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boxes .box .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 215px;
+}
+
+.boxes .box .top img {
+  height: 135px;
+}
+
+.boxes .box .boxTxt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 215px;
+  height: 70px;
+  border-radius: 15px;
+}
+
+.boxes .box .boxTxt span {
+  color: #171439;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.bottom p {
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+}
+
+.boxes .box .boxTxt:hover {
+  background-color: #594dd6;
+  transform: scale(1.1);
+  transition: ease-out 0.3s;
+  cursor: pointer;
+}
+
+.boxes .box .boxTxt:hover span {
+  color: white;
+}
